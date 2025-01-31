@@ -1,0 +1,242 @@
+.Btn {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    width: 45px;
+    height: 45px;
+    border: none;
+    border-radius: 50%;
+    cursor: pointer;
+    position: relative;
+    overflow: hidden;
+    transition-duration: 0.3s;
+    box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.199);
+    background-color: RGB(29, 185, 84);
+  }
+  
+  /* plus sign */
+  .sign {
+    width: 100%;
+    transition-duration: 0.3s;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  .sign svg {
+    width: 18px;
+  }
+  
+  .sign svg path {
+    fill: black;
+  }
+  /* text */
+  .text {
+    position: absolute;
+    right: 0%;
+    width: 0%;
+    opacity: 0;
+    color: black;
+    font-size: 1.2em;
+    font-weight: 600;
+    transition-duration: 0.3s;
+  }
+  /* hover effect on button width */
+  .Btn:hover {
+    width: 125px;
+    border-radius: 40px;
+    transition-duration: 0.3s;
+  }
+  
+  .Btn:hover .sign {
+    width: 30%;
+    transition-duration: 0.3s;
+    padding-left: 20px;
+  }
+  /* hover effect button's text */
+  .Btn:hover .text {
+    opacity: 1;
+    width: 70%;
+    transition-duration: 0.3s;
+    padding-right: 10px;
+  }
+  /* button click effect*/
+  .Btn:active {
+    transform: translate(2px, 2px);
+  }
+  /* From Uiverse.io by PhyoTP */ 
+.button-with-icon {
+    overflow: hidden;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    border: 1px solid #3b2400;
+    letter-spacing: 1px;
+    padding: 0 12px;
+    text-align: center;
+    width: 120px;
+    height: 40px;
+    font-size: 14px;
+    text-transform: uppercase;
+    font-weight: normal;
+    border-radius: 3px;
+    outline: none;
+    user-select: none;
+    cursor: pointer;
+    transform: translateY(0px);
+    position: relative;
+    box-shadow:
+      inset 0 30px 30px -15px rgba(255, 255, 255, 0.1),
+      inset 0 0 0 1px rgba(255, 255, 255, 0.3),
+      inset 0 1px 20px rgba(0, 0, 0, 0),
+      0 3px 0 #3b2400,
+      0 3px 2px rgba(0, 0, 0, 0.2),
+      0 5px 10px rgba(0, 0, 0, 0.1),
+      0 10px 20px rgba(0, 0, 0, 0.1);
+    background: #e4941b;
+    color: white;
+    text-shadow: 0 1px 0 rgba(0, 0, 0, 0.3);
+    transition: 150ms all ease-in-out;
+  }
+  
+  .button-with-icon .icon {
+    margin-right: 8px;
+    width: 24px;
+    height: 24px;
+    transition: all 0.5s ease-in-out;
+  }
+  
+  .button-with-icon:active {
+    transform: translateY(3px);
+    box-shadow:
+      inset 0 16px 2px -15px rgba(0, 0, 0, 0),
+      inset 0 0 0 1px rgba(255, 255, 255, 0.15),
+      inset 0 1px 20px rgba(0, 0, 0, 0.1),
+      0 0 0 #0f988e,
+      0 0 0 2px rgba(255, 255, 255, 0.5),
+      0 0 0 rgba(0, 0, 0, 0),
+      0 0 0 rgba(0, 0, 0, 0);
+  }
+  
+  .button-with-icon:hover .text {
+    transform: translateX(80px);
+  }
+  .button-with-icon:hover .icon {
+    transform: translate(23px);
+  }
+  
+  .text {
+    transition: all 0.5s ease-in-out;
+  }
+  /* From Uiverse.io by Madflows */ 
+.button {
+    position: relative;
+    overflow: hidden;
+    height: 3rem;
+    padding: 0 2rem;
+    border-radius: 1.5rem;
+    background: #3d3a4e;
+    background-size: 400%;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+  }
+  
+  .button:hover::before {
+    transform: scaleX(1);
+  }
+  
+  .button-content {
+    position: relative;
+    z-index: 1;
+  }
+  
+  .button::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    transform: scaleX(0);
+    transform-origin: 0 50%;
+    width: 100%;
+    height: inherit;
+    border-radius: inherit;
+    background: linear-gradient(
+      82.3deg,
+      rgba(150, 93, 233, 1) 10.8%,
+      rgba(99, 88, 238, 1) 94.3%
+    );
+    transition: all 0.475s;
+  }
+  /* From Uiverse.io by Yaya12085 */ 
+.input-container {
+    position: relative;
+    display: flex;
+    height: 2.8rem;
+    width: 100%;
+    min-width: 200px;
+    max-width: 250px;
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 20px 20px 30px rgba(0, 0, 0, .05);
+  }
+  
+  .input-container input {
+    height: 100%;
+    width: 100%;
+    border-radius: 8px;
+    border: 1px solid  rgb(176 190 197);
+    background-color: transparent;
+    padding: 0.625rem 70px 0.625rem 0.75rem;
+    font-size: 0.875rem;
+    line-height: 1.25rem;
+    font-weight: 400;
+    color: rgb(69 90 100);
+    outline: none;
+    transition: all .15s cubic-bezier(0.4, 0, 0.2, 1);
+  }
+  
+  .input-container input:focus {
+    border: 1px solid red;
+  }
+  
+  .invite-btn {
+    position: absolute;
+    width: 65px;
+    right: 4px;
+    top: 4px;
+    bottom: 4px;
+    z-index: 10;
+    border-radius: 4px;
+    background-color: green;
+    color: #fff;
+    padding-top: .25rem;
+    padding-bottom: .25rem;
+    padding-left: 0.5rem;
+    padding-right: 0.5rem;
+    text-align: center;
+    vertical-align: middle;
+    font-size: 12px;
+    font-weight: 600;
+    text-transform: uppercase;
+    border: none;
+    transition: .6s ease;
+  }
+  
+  .invite-btn:hover {
+    right: 2px;
+    top: 2px;
+    bottom: 2px;
+    border-radius: 8px;
+  }
+  
+  .input-container input:placeholder-shown ~ .invite-btn {
+    pointer-events: none;
+    background-color: green;
+    opacity: 0.5;
+  }  
+  .lol{
+    background-image: url(./imagesoleh/map.png);
+    background-size: cover;
+    height: 80vh;
+  }
